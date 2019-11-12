@@ -18,6 +18,7 @@ RUN mkdir -p /var/wiremock/lib/ \
 WORKDIR /home/wiremock
 
 COPY docker-entrypoint.sh /
+RUN chmod +x /docker-entrypoint.sh
 
 VOLUME /home/wiremock
 EXPOSE 8080 8443
